@@ -96,14 +96,16 @@ function KanbanBoard({ tickets, users }) {
   }, {});
 
   return (
-    <div>
+    <div style={{display:'flex'}}>
       {/* Pass groupBy and sortBy to Dropdown so it reflects the current state */}
+      <div style={{float:'left'}}>
       <Dropdown
         groupBy={groupBy}
         sortBy={sortBy}
         onGroupChange={handleGroupChange}
         onSortChange={handleSortChange}
       />
+      </div>
 
       {/* Render Kanban columns based on the grouped and sorted tickets */}
       <div className="kanban-board">

@@ -110,3 +110,20 @@
     background-color: #f1f1f1;
   }
   
+  .dropdown-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Optional: Adds spacing between sections */
+  }
+  
+  .dropdown-section label {
+    margin-right: 0px; /* Adds space between the label and select element */
+    white-space: nowrap; /* Prevents label from breaking into a new line */
+  }
+  
+  .dropdown-section select {
+    margin-left: 10px;
+    padding: 5px; /* Optional: Adds padding for better appearance */
+    width: 75%;
+  }
+  

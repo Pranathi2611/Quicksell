@@ -1,0 +1,46 @@
+.kanban-column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5; /* Optional: Background color for header */
+    border-bottom: 1px solid #ddd; /* Optional: Border for header separation */
+  }
+  
+  .kanban-column-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-icon {
+    margin-right: 10px; /* Space between icon and title */
+    width: 24px; /* Adjust as needed */
+    height: 24px; /* Adjust as needed */
+  }
+  
+  .kanban-column-title {
+    margin-right: 10px; /* Space between title and ticket count */
+  }
+  
+  .ticket-count {
+    font-size: 14px; /* Adjust font size */
+    color: #555; /* Adjust color */
+  }
+  
+  .kanban-column-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .add-ticket, .more-options {
+    background: none;
+    border: none;
+    font-size: 18px; /* Adjust size for icons */
+    margin-left: 10px; /* Space between "+" and "..." */
+    cursor: pointer;
+  }
+  
+  .add-ticket:hover, .more-options:hover {
+    color: #007bff; /* Optional: Hover effect */
+  }
+  
