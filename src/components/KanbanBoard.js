@@ -118,6 +118,7 @@ function KanbanBoard({ tickets, users }) {
               groupName={group}
               tickets={sortedGroupedTickets[group]}
               users={users} // Pass users data to KanbanColumn
+              groupBy={groupBy}
             />
           ))
         )}

@@ -7,7 +7,7 @@ import backlogIcon from "../assets/icons_FEtask/Backlog.svg";
 import cancelledIcon from "../assets/icons_FEtask/Cancelled.svg";
 import "./kanbanColumn.css"
 
-function KanbanColumn({ groupName, tickets, users }) {
+function KanbanColumn({ groupName, tickets, users,groupBy }) {
   // Map group name to corresponding icons
   const getStatusIcon = (groupName) => {
     switch (groupName.toLowerCase()) {
@@ -47,7 +47,7 @@ function KanbanColumn({ groupName, tickets, users }) {
       </div>
 
       {tickets.map((ticket) => (
-        <TicketCard key={ticket.id} ticket={ticket} users={users} /> // Pass the users object
+        <TicketCard key={ticket.id} ticket={ticket} users={users} groupBy={groupBy}/> // Pass the users object
       ))}
     </div>
   );
